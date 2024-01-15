@@ -13,10 +13,10 @@ const Page = () => {
   const gerarToken = async () => {
     let apiUrl = '';
 
-    if (sistema === '1') {
-      apiUrl = 'https://api.igut.med.br/v2/usuarios/login';
-    } else {
+    if (sistema === '2') {
       apiUrl = 'https://api.eba.med.br/v3/usuarios/login';
+    } else {
+      apiUrl = 'https://api.igut.med.br/v2/usuarios/login';
     }
 
     const base64Clinica = btoa(clinica);
